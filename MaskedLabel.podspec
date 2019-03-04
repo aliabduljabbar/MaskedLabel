@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MaskedLabel'
-  s.version          = '0.9.2'
+  s.version          = '0.9.3'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.summary          = 'MaskedLabel is a UILabel subclass that allows you to easily apply a gradient to its text or to make it transparent.'
   s.homepage         = 'https://github.com/darincon/MaskedLabel'
