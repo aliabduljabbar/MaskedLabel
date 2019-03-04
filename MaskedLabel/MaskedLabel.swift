@@ -17,19 +17,19 @@ open class MaskedLabel: UILabel {
     /// An array of UIColor that defines the gradient. If it contains only one
     /// element, it will be applied as start and end color. In case this property
     /// is nil or an empty array, the value of fillColor will be used instead.
-    open var gradientColors: [UIColor]?
+    @objc open var gradientColors: [UIColor]?
     
     /// The location for each color provided in components. Each location must be a
     /// CGFloat value in the range of 0 to 1, inclusive. If 0 and 1 are not in the 
     /// locations array, Quartz uses the colors provided that are closest to 0 and
     /// 1 for those locations.
-    open var gradientLocations: [CGFloat]?
+    @objc open var gradientLocations: [CGFloat]?
     
     /// The coordinate that defines the starting point of the gradient.
-    open var startPoint: CGPoint?
+    @objc open var startPoint: CGPoint = .zero
     
     /// The coordinate that defines the ending point of the gradient.
-    open var endPoint: CGPoint?
+    @objc open var endPoint: CGPoint = .zero
     
     /// Set this property when a constant color is needed instead of a gradient. 
     /// If both this property and gradientColors are set, this color is omitted 
