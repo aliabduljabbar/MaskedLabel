@@ -35,7 +35,7 @@ open class MaskedLabel: UILabel {
     /// If both this property and gradientColors are set, this color is omitted 
     /// and the gradient will be applied to the text. The default value is
     /// UIColor.black.
-    open var fillColor: UIColor = UIColor.black
+    @objc open var fillColor: UIColor = UIColor.black
     
     /// A constant indicating if the gradient, or color, will be applied to the 
     /// label's background, making the text transparent, or to the text.
